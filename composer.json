@@ -59,10 +59,13 @@
         },
         "config-plugin-output-dir": "runtime/build/config",
         "config-plugin": {
-            "common": "config/common.php",
             "params": [
                 "config/params.php",
                 "?config/params-local.php"
+            ],
+            "common": "config/common.php",
+            "params_test": [
+                "config/params_test.php"
             ],
             "web": [
                 "$common",
@@ -71,6 +74,9 @@
             "console": [
                 "$common",
                 "config/console.php"
+            ],
+            "frontend": [
+                "config/frontend.php"
             ],
             "providers": "config/providers.php",
             "providers-web": [
@@ -92,8 +98,6 @@
             ],
             "routes": "config/routes.php"
         }
-    },
-    "config": {
-        "sort-packages": true
     }
+
 }
