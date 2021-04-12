@@ -18,10 +18,4 @@ class AppAsset extends AssetBundle
     public array $css = [
         'site.css',
     ];
-
-    public array $depends = [
-        BulmaAsset::class,
-        BulmaHelpersAsset::class,
-        BulmaJsAsset::class,
-    ];
 }

@@ -19,8 +19,8 @@ return [
         'aliases' => [
             '@root' => dirname(__DIR__),
             '@assets' => '@root/public/assets',
-            '@assetsUrl' => '/assets',
-            '@baseUrl' => '/',
+            '@assetsUrl' => '/app/public/assets',
+            '@baseUrl' => '/app/public',
             '@message' => '@root/resources/message',
             '@npm' => '@root/node_modules',
             '@public' => '@root/public',
@@ -43,5 +43,12 @@ return [
         'commands' => [
             'hello' => Hello::class,
         ],
+    ],
+
+    'yiisoft/yii-auth-client' => [
+        'clients' => [
+            'google' => \Yiisoft\Yii\AuthClient\Client\Google::class,
+            'github' => \Yiisoft\Yii\AuthClient\Client\GitHub::class
+        ]
     ],
 ];

@@ -9,6 +9,14 @@ use Yiisoft\Html\Html;
 $this->setTitle('404');
 ?>
 
+<?php
+$widget = \Yiisoft\Yii\AuthClient\Widget\AuthChoice::widget();
+
+//$client->setViewOptions(['popupWidth' => 420]);
+$widget->authRoute('auth');
+
+echo $widget;
+?>
 <h1 class="is-size-1">
     <b>404</b>
 </h1>

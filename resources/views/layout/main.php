@@ -40,6 +40,8 @@ $this->setJsVar($assetManager->getJsVar());
             <title><?= Html::encode($this->getTitle()) ?></title>
         <?php endif ?>
         <?php $this->head() ?>
+        <script
+                src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
     </head>
     <body>
         <?php $this->beginBody() ?>
