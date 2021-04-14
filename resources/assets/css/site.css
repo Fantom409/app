@@ -34,3 +34,6 @@ a:hover, a:active {
 .input:-ms-input-placeholder, .textarea:-ms-input-placeholder, .select select:-ms-input-placeholder {
   color: hsl(0, 0%, 40%);
 }
+.auth-icon.hydra {
+    background-position: 0 -272px;
+}

@@ -2,6 +2,7 @@
 
 declare(strict_types=1);
 
+use App\AuthClient\Hydra;
 use Yiisoft\Yii\AuthClient\Client\GitHub;
 use Yiisoft\Yii\AuthClient\Client\Google;
 
@@ -20,6 +21,14 @@ return [
         ],
         'setClientSecret()' => [
             'clientSecret' => 'aa8e5a6b122335427af3c588abae967d71f94599'
+        ]
+    ],
+    Hydra::class => [
+        'setClientId()' => [
+            'clientId' => 'my-client'
+        ],
+        'setClientSecret()' => [
+            'clientSecret' => 'my-client'
         ]
     ]
 ];

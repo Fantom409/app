@@ -48,7 +48,8 @@ return [
     'yiisoft/yii-auth-client' => [
         'clients' => [
             'google' => \Yiisoft\Yii\AuthClient\Client\Google::class,
-            'github' => \Yiisoft\Yii\AuthClient\Client\GitHub::class
+            'github' => \Yiisoft\Yii\AuthClient\Client\GitHub::class,
+            'hydra' => \App\AuthClient\Hydra::class
         ]
     ],
 ];
