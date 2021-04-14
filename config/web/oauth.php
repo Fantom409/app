@@ -25,10 +25,10 @@ return [
     ],
     Hydra::class => [
         'setClientId()' => [
-            'clientId' => 'my-client'
+            'clientId' => 'auth-code-client'
         ],
         'setClientSecret()' => [
-            'clientSecret' => 'my-client'
+            'clientSecret' => 'secret'
         ]
     ]
 ];
